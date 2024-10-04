@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#redbutton{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#bluebutton{
+    background-color:blue;
+    color: white;
+    border: none;
+}
+
+#greenbutton{
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#reset{
+    background-color: transparent;
+    color: black;
+    border: solidblack;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="redbutton" onClick="changeBackgroudColor('red')">Red Button</button>
+    <button id="bluebutton" onClick="changeBackgroudColor('blue')">Blue Button</button>
+    <button id="greenbutton" onClick="changeBackgroudColor('green')">Green Button</button>
+    <button id="resetbutton" onClick="resetBackgroudColor()">reset</button>
+
+    <script> 
+        function changeBackgroudColor(color){
+            document.body.style.backgroundColor = color;
+        }
+        function resetBackgroudColor(){
+            document.body.style.backgroundColor = '';
+        }
+    </script>
+</body>
+</html>
